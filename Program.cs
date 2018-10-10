@@ -65,6 +65,27 @@ namespace linq
             {
                 15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
             };
+            
+            Console.WriteLine ($"The list has {numbers3.Count()} numbers total.");
+
+            // How much money have we made?
+            List<double> purchases = new List<double>()
+            {
+                2340.29, 745.31, 21.76, 34.03, 4786.45, 879.45, 9442.85, 2454.63, 45.65
+            };
+
+            Console.WriteLine ($"We made {purchases.Sum().ToString("C"):f2} total.");
+
+            // What is our most expensive product?
+            List<double> prices = new List<double>()
+            {
+                879.45, 9442.85, 2454.63, 45.65, 2340.29, 34.03, 4786.45, 745.31, 21.76
+            };
+
+            Console.WriteLine ($"The highest price in the list is {prices.Max().ToString("C"):f2}");
+
+            
+
         }
     }
 }
